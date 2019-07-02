@@ -8,7 +8,7 @@ class Contact extends Component {
       <div className="contact-body">
         <Grid className="contact-grid">
           <Cell col={6}>
-            <h2>Paul Hanna</h2>
+            <h2>Brently Bazor</h2>
             <img
               src="images/bitmoji-forward.png"
               alt="avatar"
