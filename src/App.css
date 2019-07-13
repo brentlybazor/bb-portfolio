@@ -9,7 +9,7 @@
   background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   text-align: center;
-  position: fixed;
+  /* position: fixed; */
   top: 0;
   left: 0;
   width: 100%;
@@ -31,7 +31,7 @@
 
 .contact-body {
   margin: auto;
-  position: fixed;
+  /* position: fixed; */
   width: 100%;
   height: 100%;
   justify-content: center;
@@ -63,9 +63,29 @@
   margin: auto;
 }
 
+.contact-list {
+  width: '100%';
+  background-color: 'blue';
+}
+
 .contact-list i {
   font-size: 66px;
-  padding-right: 5rem;
+
+  display: block;
+
+}
+
+.contact-list span {
+  font-size: 30px;
+  display: block;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+@media only screen and (max-width: 600px) {
+  .contact-list span{
+    font-size: 20px;
+  }
 }
 
 
@@ -102,6 +122,12 @@
   padding: 1em;
 }
 
+@media only screen and (max-width: 600px) {
+  .banner-text h1{
+    font-size: 40px;
+  }
+}
+
 .social-links {
   display: flex;
   justify-content: space-between;
@@ -109,7 +135,8 @@
   margin: auto;
 }
 
-.social-links i {
+
+.link-icon {
   color: white;
   font-size: 5em;
   padding: 8px;

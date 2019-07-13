@@ -5,7 +5,7 @@ import { Grid, Cell } from 'react-mdl';
 class Landing extends Component {
   render() {
     return(
-      <div style={{width: '100%'}}>
+      <div style={{ display: 'flex', height: '100%' }}>
         <Grid className="landing-grid">
           <Cell col={12}>
             <img
@@ -17,34 +17,36 @@ class Landing extends Component {
             <div className="banner-text">
               <h1>Full Stack Developer</h1>
               <h1>Web & Mobile</h1>
+              <a href="http://google.com" rel="noopener noreferrer" target="_blank">
+                <i className="fa fa-linkedin link-icon" />
+              </a>
 
-            <hr/>
+              <hr/>
 
-          <p>HTML/CSS | Bootstrap | JavaScript | React | React Native | NodeJS | Express | MongoDB</p>
+              <p>HTML/CSS | Bootstrap | JavaScript | React | React Native | NodeJS | Express | MongoDB</p>
 
-        <div className="social-links">
+              {/* LinkedIn */}
+              <a href="https://www.linkedin.com/in/brently-bazor-221a876a" rel="noopener noreferrer" target="_blank">
+                <i className="fa fa-linkedin link-icon" />
+              </a>
 
-          {/* LinkedIn */}
-          <a href="http://google.com" rel="noopener noreferrer" target="_blank">
-            <i className="fa fa-linkedin-square" aria-hidden="true" />
-          </a>
+              {/* Github */}
+              <a href="https://github.com/brentlybazor" rel="noopener noreferrer" target="_blank">
+                <i className="fa fa-github link-icon" />
+              </a>
 
-          {/* Github */}
-          <a href="http://google.com" rel="noopener noreferrer" target="_blank">
-            <i className="fa fa-github-square" aria-hidden="true" />
-          </a>
+              {/* Freecodecamp */}
+              <a href="https://www.freecodecamp.org/brently.bazor" rel="noopener noreferrer" target="_blank">
+                <i className="fa fa-free-code-camp link-icon" aria-hidden="true" />
+              </a>
 
-          {/* Freecodecamp */}
-          <a href="http://google.com" rel="noopener noreferrer" target="_blank">
-            <i className="fa fa-free-code-camp" aria-hidden="true" />
-          </a>
+              {/* Youtube */}
+              {/*
+              <a href="http://google.com" rel="noopener noreferrer" target="_blank">
+                <i className="fa fa-youtube link-icon" aria-hidden="true" />
+              </a>
+              */}
 
-          {/* Youtube */}
-          <a href="http://google.com" rel="noopener noreferrer" target="_blank">
-            <i className="fa fa-youtube-square" aria-hidden="true" />
-          </a>
-
-        </div>
             </div>
           </Cell>
         </Grid>
