@@ -25,6 +25,14 @@ class Contact extends Component {
               <List>
                 <ListItem>
                   <ListItemContent style={{fontSize: '30px', fontFamily: 'Anton'}}>
+                    <a href={'https://brentlybazor.appointlet.com/s/short-call'} style={{ color: 'black', textDecoration: 'none' }} target="_blank">
+                      <i className="fa fa-calendar" aria-hidden="true"/>
+                      <span style={{ paddingTop: 5}}>Click to Schedule Appointment</span>
+                    </a>
+                  </ListItemContent>
+                </ListItem>
+                <ListItem>
+                  <ListItemContent style={{fontSize: '30px', fontFamily: 'Anton'}}>
                     <i style={{ position: 'relative', left: 0 }} className="fa fa-phone-square" aria-hidden="true"/>
                     <span>(601) 447-0613</span>
                   </ListItemContent>
@@ -43,14 +51,14 @@ class Contact extends Component {
                     <span>brently.bazor</span>
                   </ListItemContent>
                 </ListItem>
-              <ListItem>
+              {/* <ListItem>
                 <ListItemContent style={{fontSize: '30px', fontFamily: 'Anton'}}>
                   <a href={'https://calendar.google.com/calendar/embed?src=brently.bazor@gmail.com&mode=WEEK'} style={{ color: 'black', textDecoration: 'none' }} target="_blank">
                     <i className="fa fa-calendar" aria-hidden="true"/>
                     <span style={{ paddingTop: 5}}>Click to View Calendar</span>
                   </a>
                 </ListItemContent>
-              </ListItem>
+              </ListItem> */}
             </List>
             </div>
           </Cell>

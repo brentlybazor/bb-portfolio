@@ -30,9 +30,8 @@ class Resume extends Component {
               <li>Martial Artist</li>
             </ul>
             <hr style={{borderTop: '3px solid #833fb2', width: '50%'}}/>
-            <h5>Address</h5>
-            <p>2001 Carterville Road</p>
-            <p>Petal, MS 39465</p>
+            <h5>Current Location</h5>
+            <p>Hattiesburg, MS</p>
             <h5>Phone</h5>
             <p>(601) 447-0613</p>
             <h5>Email</h5>
@@ -42,6 +41,12 @@ class Resume extends Component {
             <hr style={{borderTop: '3px solid #833fb2', width: '50%'}}/>
           </Cell>
           <Cell className="resume-right-col" col={8}>
+            <div style={{ display: 'flex', width: '100%', justifyContent: 'center', marginBottom: '30px'}}>
+              <a href="https://drive.google.com/open?id=1qJsk_48EWMdcD-lzKLd6tHQbIGdnVGYs" target="_blank" style={{  backgroundColor: 'white', padding: '10px', borderRadius: '10px', textDecoration: 'none', fontSize: '24px', width: '50%', textAlign: 'center'}}>Download Resume</a>
+            </div>
+            {/* <div style={{ height: '10px'}}></div> */}
+            <hr style={{borderTop: '3px solid #e22947'}} />
+
             <h2>Education</h2>
 
 
@@ -88,12 +93,16 @@ class Resume extends Component {
                 />
               <Skills
                 skill="NodeJS"
-                progress={50}
+                progress={60}
                 />
               <Skills
                 skill="React"
                 progress={85}
                 />
+                <Skills
+                  skill="React Native"
+                  progress={95}
+                  />
 
 
           </Cell>
