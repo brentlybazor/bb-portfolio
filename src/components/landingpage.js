@@ -17,9 +17,20 @@ class Landing extends Component {
             <div className="banner-text">
               <h1>Full Stack Developer</h1>
               <h1>Web & Mobile</h1>
+
               <hr/>
 
-              <p>HTML/CSS | Bootstrap | JavaScript | React | React Native | NodeJS | Express | MongoDB</p>
+              <h5>Prefered Skills</h5>
+              <p>HTML | CSS | Bootstrap | JavaScript | React | React Native | NodeJS | Express | MongoDB</p>
+
+              <hr/>
+
+              <h5>Other Skills</h5>
+              <p>Python | C++ | C# | Unreal Engine | PHP</p>
+
+              <hr/>
+
+              <h5>Online Profiles</h5>
 
               {/* LinkedIn */}
               <a href="https://www.linkedin.com/in/brently-bazor-221a876a" rel="noopener noreferrer" target="_blank">

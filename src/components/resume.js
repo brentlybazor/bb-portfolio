@@ -51,16 +51,20 @@ class Resume extends Component {
 
 
             <Education
-              startYear={2011}
-              endYear={2015}
+              startYear="Aug 2011"
+              endYear="May 2015"
               schoolName="Univiersity of Southern Mississippi"
+              schoolLocation="Hattiesburg, Mississippi"
+              schoolDegree="Information Technology: Developer"
               // schoolDescription="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
                />
 
              <Education
-               startYear={2008}
-               endYear={2011}
+               startYear="Aug 2008"
+               endYear="May 2011"
                schoolName="Jones College"
+               schoolLocation="Ellisville, Mississippi"
+               schoolDegree="Music Education"
                // schoolDescription="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
                 />
                 <hr style={{borderTop: '3px solid #e22947'}} />
@@ -72,8 +76,68 @@ class Resume extends Component {
               endYear="Jun 2019"
               jobTitle="Lead Mobile Developer"
               jobName="CNC Catastrophe & National Claims"
-              // jobDescription="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+              jobLocation="Mobile, Alabama"
+              jobDescription='Built native mobile applications using React Native.\nConnected mobile applications to a REST API.'
               />
+
+              <Experience
+                startYear="Jun 2015"
+                endYear="Present"
+                jobTitle="Owner/ Software Engineer/ Marketing Manager"
+                jobName="Empire Software and Marketing"
+                jobLocation="Hattiesburg, Mississippi"
+                jobDescription='Developed web applications and Customer Relationship Management software using various programming languages that used backend services such as SQL databases.
+                                \nManaged marketing and social media channels for the company and clients.
+                                \nUsed programming languages like HTML, Javascript, PHP, C++, and Java to create various programs and websites for clients and used Linux/Unix servers to maintain data used in the applications.
+                                \nDeveloped applications using React, React Native, Node.js, Express, and AWS.'
+                />
+
+                <Experience
+                  startYear="Jun 2016"
+                  endYear="Nov 2016"
+                  jobTitle="Software Engineer"
+                  jobName="Voxo"
+                  jobLocation="Hattiesburg, Mississippi"
+                  jobDescription='Developed geolocation-based mobile applications using Angular/Javascript with the Ionic Framework.
+                                  \nCreated web applications using Laravel and PHP.
+                                  \nWorked closely with a remote team and individual projects using Git source control and online communications.'
+                  />
+
+                  <Experience
+                    startYear="Dec 2011"
+                    endYear="May 2012"
+                    jobTitle="Software Engineer"
+                    jobName="ArroyoDev"
+                    jobLocation="Hattiesburg, Mississippi"
+                    jobDescription='Developed new and customized existing iPad applications for the healthcare industry.
+                                    \nProvided support to clients who used the applications.
+                                    \nWorked closely with a remote team using Bitbucket source control and online communications.
+                                    \nUsed C++ and Lua Glider with the Corona SDK in the Netbeans IDE to create full stack applications for iPad.'
+                    />
+
+                    <Experience
+                      startYear="Aug 2011"
+                      endYear="Dec 2011"
+                      jobTitle="Software Engineer"
+                      jobName="National Center for Spectator Sports Safety and Security"
+                      jobLocation="Hattiesburg, Mississippi"
+                      jobDescription='Produced 3D models of sporting venues and created simulation software predicted the best way to react to various hazardous events. i.e. Bomb explosion, Fire evacuation.
+                                      \nUsed Netbeans for C++ development and a proprietary 4D Script language to create the simulations.
+                                      \nWorked closely with an in-house development team using an in-house source control application.'
+                      />
+                    <Experience
+                      startYear="May 2012"
+                      endYear="Sept 2016"
+                      jobTitle="Owner/ Operator"
+                      jobName="Bazor MMA Club"
+                      jobLocation="Petal, Mississippi"
+                      jobDescription='Founded a start up martial arts company.
+                                      \nCreated marketing strategies and advertising plans.
+                                      \nWorked closely with clients. Taught martial arts classes for ages 3 and up.
+                                      \nPlay leading role in sales and marketing, including online and in house transactions and advertising.
+                                      \nUse cutting edge technology to automate the sales and communication processes. i.e. automated emails and text messages.'
+                      />
+
 
               {/* <Experience
                 startYear={2012}
@@ -84,12 +148,12 @@ class Resume extends Component {
               <hr style={{borderTop: '3px solid #e22947'}} />
               <h2>Skills</h2>
               <Skills
-                skill="javascript"
-                progress={100}
+                skill="Javascript"
+                progress={90}
                 />
               <Skills
                 skill="HTML/CSS"
-                progress={80}
+                progress={90}
                 />
               <Skills
                 skill="NodeJS"

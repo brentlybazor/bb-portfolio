@@ -110,6 +110,12 @@
   color: white;
 }
 
+.banner-text h5 {
+  font-size: 28px;
+  font-weight: bold;
+  color: white;
+}
+
 .banner-text hr {
   border-top: 5px dotted white;
   width: 50%;
@@ -118,7 +124,7 @@
 
 .banner-text p {
   color: white;
-  font-size: 20px;
+  font-size: 18px;
   padding: 1em;
 }
 
