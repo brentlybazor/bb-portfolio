@@ -20,7 +20,7 @@ class Landing extends Component {
 
               <hr/>
 
-              <h5>Prefered Skills</h5>
+              <h5>Preferred Skills</h5>
               <p>HTML | CSS | Bootstrap | JavaScript | React | React Native | NodeJS | Express | MongoDB</p>
 
               <hr/>
