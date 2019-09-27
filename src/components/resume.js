@@ -72,6 +72,15 @@ class Resume extends Component {
             <h2>Experience</h2>
 
             <Experience
+              startYear="Aug 2019"
+              endYear="Present"
+              jobTitle="Front End Developer"
+              jobName="Hogarth World Wide Inc"
+              jobLocation="San Jose, California"
+              jobDescription='Worked on a large scale website localization project for a Fortune 10 company. '
+              />
+
+            <Experience
               startYear="Sept 2018"
               endYear="Jun 2019"
               jobTitle="Lead Mobile Developer"
