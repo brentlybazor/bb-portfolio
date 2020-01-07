@@ -30,7 +30,7 @@ class About extends Component {
                     {/* <a href={'https://brentlybazor.appointlet.com/s/short-call'} style={{ color: 'black', textDecoration: 'none' }} target="_blank"> */}
                       <i className="fa fa-question-circle" aria-hidden="true"/>
                       <span style={{ paddingTop: 5, paddingBottom: 10 }}>Who am I...</span>
-                      <p>I am a Software Engineer living in Hattiesburg, Mississippi. I like to make cool and exciting websites, mobile apps and softwares.</p>
+                      <p>I am a Software Engineer living in Clearwater, Florida. I like to make cool and exciting websites, mobile apps and softwares.</p>
                     {/* </a> */}
                   </ListItemContent>
                 </ListItem>
