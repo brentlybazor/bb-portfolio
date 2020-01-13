@@ -20,13 +20,13 @@ class Resume extends Component {
             </div>
 
             <h2 style={{paddingTop: '2em'}}>Brently Bazor</h2>
-            <h4 style={{color: 'grey'}}>Programmer</h4>
+            <h4 style={{color: 'grey'}}>Software Engineer</h4>
             <hr style={{borderTop: '3px solid #833fb2', width: '50%'}}/>
             <ul>
               <li>Father</li>
               <li>Gamer</li>
-              <li>Programmer</li>
-              <li>Ultimate Frisbee</li>
+              <li>Software Engineer</li>
+              <li>Sports</li>
               <li>Martial Artist</li>
             </ul>
             <hr style={{borderTop: '3px solid #833fb2', width: '50%'}}/>
@@ -37,7 +37,7 @@ class Resume extends Component {
             <h5>Email</h5>
             <p>brently.bazor@gmail.com</p>
             <h5>Web</h5>
-            <p>brentlybazor.com</p>
+            <a href="http://brentlybazor.com/">brentlybazor.com</a>
             <hr style={{borderTop: '3px solid #833fb2', width: '50%'}}/>
           </Cell>
           <Cell className="resume-right-col" col={8}>
@@ -67,9 +67,27 @@ class Resume extends Component {
                schoolDegree="Music Education"
                // schoolDescription="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
                 />
+
+                <Education
+                  startYear="Aug 2004"
+                  endYear="May 2008"
+                  schoolName="Petal High School"
+                  schoolLocation="Petal, Mississippi"
+                  schoolDegree="General Education"
+                  // schoolDescription="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+                   />
                 <hr style={{borderTop: '3px solid #e22947'}} />
 
             <h2>Experience</h2>
+
+            <Experience
+              startYear="Sept 2019"
+              endYear="Present"
+              jobTitle="Senior Software Engineer"
+              jobName="Chargebacks 911"
+              jobLocation="Clearwater, Florida"
+              jobDescription='Developed next-gen React web applications to aid the finance industry protect against credit card chargebacks.'
+              />
 
             <Experience
               startYear="Aug 2019"
