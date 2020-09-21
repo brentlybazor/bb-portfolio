@@ -30,12 +30,6 @@ class Resume extends Component {
               <li>Martial Artist</li>
             </ul>
             <hr style={{borderTop: '3px solid #833fb2', width: '50%'}}/>
-            <h5>Current Location</h5>
-            <p>Clearwater, FL</p>
-            <h5>Phone</h5>
-            <p>(601) 447-0613</p>
-            <h5>Email</h5>
-            <p>brently.bazor@gmail.com</p>
             <h5>Web</h5>
             <a href="http://brentlybazor.com/">brentlybazor.com</a>
             <hr style={{borderTop: '3px solid #833fb2', width: '50%'}}/>
