@@ -42,7 +42,7 @@ class Resume extends Component {
           </Cell>
           <Cell className="resume-right-col" col={8}>
             <div style={{ display: 'flex', width: '100%', justifyContent: 'center', marginBottom: '30px'}}>
-              <a href="https://drive.google.com/open?id=1qJsk_48EWMdcD-lzKLd6tHQbIGdnVGYs" target="_blank" style={{  backgroundColor: 'white', padding: '10px', borderRadius: '10px', textDecoration: 'none', fontSize: '24px', width: '50%', textAlign: 'center'}}>Download Resume</a>
+              <a href="https://drive.google.com/open?id=1qJsk_48EWMdcD-lzKLd6tHQbIGdnVGYs" target="_blank" rel="noopener noreferrer" style={{  backgroundColor: 'white', padding: '10px', borderRadius: '10px', textDecoration: 'none', fontSize: '24px', width: '50%', textAlign: 'center'}}>Download Resume</a>
             </div>
             {/* <div style={{ height: '10px'}}></div> */}
             <hr style={{borderTop: '3px solid #e22947'}} />
