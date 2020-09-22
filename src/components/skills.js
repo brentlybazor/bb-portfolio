@@ -1,16 +1,26 @@
-import React, { Component } from 'react';
-import { Grid, Cell, ProgressBar } from 'react-mdl';
+import React from 'react';
+import { Grid, Cell } from 'react-mdl';
 
-class Skills extends Component {
-  render() {
-    return(
-      <Grid>
-        <Cell col={12}>
-          <div style={{display: 'flex'}}>{this.props.skill} <ProgressBar style={{margin: 'auto', width: '75%'}} progress={this.props.progress} /> </div>
-        </Cell>
-      </Grid>
+function Skills(props) {
+
+  const Skill = ({ data }) => {
+    const { yearStarted, name } = data;
+    const numberOfYears = yearStarted ? (new Date().getFullYear()) - yearStarted : ''
+
+    return (
+      <Cell col={6}>
+        <div style={{ height: '10px'}}>
+          <p>{name}{numberOfYears > 0 && ' - ' + numberOfYears + ` year${numberOfYears > 1 ? 's' : ''}`}</p>
+        </div>
+      </Cell>
     )
   }
+
+  return (
+    <Grid>
+      {props.data.map((sData) => <Skill data={sData} />)}
+    </Grid>
+  )
 }
 
 export default Skills;

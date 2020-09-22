@@ -1,22 +1,21 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Grid, Cell } from 'react-mdl';
 
-class Education extends Component {
-  render() {
-    return(
-      <Grid>
-        <Cell col={4}>
-          <p>{this.props.startYear} - {this.props.endYear}</p>
-        </Cell>
-        <Cell col={8}>
-          <h4 style={{marginTop:'0px'}}>{this.props.schoolName}</h4>
-          <h5>{this.props.schoolLocation}</h5>
-          <h5>{this.props.schoolDegree}</h5>
-          <p>{this.props.schoolDescription}</p>
-        </Cell>
-      </Grid>
-    )
-  }
+function Education(props) {
+  
+  return (
+    <Grid>
+      <Cell col={4}>
+        <p>{props.data.startYear} {(props.data.startYear && props.data.endYear) && '-' } {props.data.endYear}</p>
+      </Cell>
+      <Cell col={8}>
+        <h4 style={{ marginTop: '0px' }}>{props.data.schoolName}</h4>
+        <h5>{props.data.schoolLocation}</h5>
+        <h5>{props.data.schoolDegree}</h5>
+        <p>{props.data.schoolDescription}</p>
+      </Cell>
+    </Grid>
+  )
 }
 
 export default Education;

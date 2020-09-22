@@ -1,24 +1,20 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import { Tabs, Tab, Grid, Cell, Card, CardTitle, CardText, CardActions, Button, CardMenu, IconButton } from 'react-mdl';
 
 
-class Projects extends Component {
-  constructor(props) {
-    super(props);
-    this.state = { activeTab: 0 };
-  }
+function Projects(props) {
 
-  toggleCategories() {
 
-    if(this.state.activeTab === 0){
-      return(
+  const [activeTab, setActiveTab] = useState(0)
+
+
+  const ToggleCategories = () => {
+    if (activeTab === 0) {
+      return (
         <Grid>
-          {/* <h3 style={{ justifyContent: 'center'}}>Projects page is coming soon...</h3>
-          <br/> */}
-
           {/* Project 1 */}
-          <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-            <CardTitle style={{color: '#fff', height: '176px', background: 'url(images/recipe-image.jpg) center / cover'}} >React Project #1</CardTitle>
+          <Card shadow={5} style={{ minWidth: '450', margin: 'auto' }}>
+            <CardTitle style={{ color: '#fff', height: '176px', background: 'url(images/recipe-image.jpg) center / cover' }} >React Project #1</CardTitle>
             <CardText>
               Simple React app using the Edemam API.
             </CardText>
@@ -26,7 +22,7 @@ class Projects extends Component {
               <Button colored href="https://github.com/brentlybazor/recipe-app/" target="_blank">GitHub</Button>
               <Button colored href="https://bb-recipe-api-app.netlify.com/" target="_blank">Live Demo</Button>
             </CardActions>
-            <CardMenu style={{color: '#fff'}}>
+            <CardMenu style={{ color: '#fff' }}>
               <IconButton name="share" />
             </CardMenu>
           </Card>
@@ -47,63 +43,47 @@ class Projects extends Component {
             </CardMenu>
           </Card> */}
         </Grid>
-
-
       )
     } else {
-    // else if(this.state.activeTab === 1) {
       return (
-
         <Grid className="contact-grid">
           <Cell col={12}>
             <img
               src="images/bitmoji-oops.jpg"
               alt="avatar"
-              style={{height: '250px'}}
-               />
-               <h2>More Projects Coming Soon...</h2>
+              style={{ height: '250px' }}
+            />
+            <h2>More Projects Coming Soon...</h2>
 
-             {/* <p style={{ width: '75%', margin: 'auto', paddingTop: '1em'}}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p> */}
+            {/* <p style={{ width: '75%', margin: 'auto', paddingTop: '1em'}}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p> */}
 
           </Cell>
         </Grid>
 
       )
     }
-    // else if(this.state.activeTab === 2) {
-    //   return (
-    //     <div><h1>This is VueJS</h1></div>
-    //   )
-    // } else if(this.state.activeTab === 3) {
-    //   return (
-    //     <div><h1>This is MongoDB</h1></div>
-    //   )
-    // }
-
   }
 
+  return (
+    <div>
+      <Tabs activeTab={activeTab} onChange={(tabId) => setActiveTab(tabId)} ripple>
+        <Tab>React</Tab>
+        <Tab>React Native</Tab>
+        <Tab>Python</Tab>
+      </Tabs>
 
 
-  render() {
-    return(
-      <div>
-        <Tabs activeTab={this.state.activeTab} onChange={(tabId) => this.setState({ activeTab: tabId })} ripple>
-          <Tab>React</Tab>
-          <Tab>React Native</Tab>
-          <Tab>Python</Tab>
-        </Tabs>
+      <Grid>
+        <Cell col={12}>
+          <div className="content">
+            <ToggleCategories />
+          </div>
+        </Cell>
+      </Grid>
 
 
-          <Grid>
-            <Cell col={12}>
-              <div className="content">{this.toggleCategories()}</div>
-            </Cell>
-          </Grid>
-
-
-      </div>
-    )
-  }
+    </div>
+  )
 }
 
 export default Projects;
