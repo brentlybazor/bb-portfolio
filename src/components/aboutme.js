@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Grid, Cell, List, ListItem, ListItemContent } from 'react-mdl';
 
 
-class About extends Component {
-  render() {
+function About() {
+  
     return(
       <div className="contact-body">
         <Grid className="contact-grid">
@@ -71,7 +71,6 @@ class About extends Component {
         </Grid>
       </div>
     )
-  }
 }
 
 export default About;
